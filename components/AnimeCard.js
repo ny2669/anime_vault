@@ -1,23 +1,6 @@
 import Image from "next/image";
 
-export interface AnimeProp {
-  id: string;
-  name: string;
-  image: {
-    original: string;
-  };
-  kind: string;
-  episodes: number;
-  episodes_aired: number;
-  score: string;
-}
-
-interface Prop {
-  anime: AnimeProp;
-  index: number;
-}
-
-function AnimeCard({ anime }: Prop) {
+function AnimeCard({ anime }) {
   return (
     <div className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
